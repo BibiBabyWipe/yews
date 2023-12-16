@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #e9e9eb;
+            font-family: 'Sf Pro Text', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 0;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #e9e9eb;
+        }
+
+        main {
+            padding: 20px;
+            background-color: #e9e9eb;
+        }
+
+        .headline, .social-link {
+            cursor: pointer;
+            margin-bottom: 10px;
+            background-color: #e9e9eb;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .social-link {
+            margin-bottom: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+    <title>YEWS COIN</title>
+</head>
+<body>
+    <header>
+        <h1>YEWS COIN</h1>
+        <p id="currentDate"></p>
+    </header>
+    
+    <main>
+        <div class="headline">Headline 1</div>
+        <div class="headline">Headline 2</div>
+        
+        <!-- Social Links -->
+        <div class="social-link"><a href="https://dummylink1.com" target="_blank">Social Link 1</a></div>
+        <div class="social-link"><a href="https://dummylink2.com" target="_blank">Social Link 2</a></div>
+        <div class="social-link"><a href="https://dummylink3.com" target="_blank">Social Link 3</a></div>
+        <div class="social-link"><a href="https://dummylink4.com" target="_blank">Social Link 4</a></div>
+
+        <!-- Add more social links as needed -->
+
+        <img src="your_image_url.jpg" alt="Description of the image">
+    </main>
+
+    <script>
+        function getCurrentDate() {
+            var now = new Date();
+            var formattedDate = now.getDate() + ' ' + (now.getMonth() + 1) + ' ' + now.getFullYear() + ' ' + now.getHours() + 'am';
+            document.getElementById("currentDate").innerHTML = formattedDate;
+        }
+
+        // Call the function to set the current date
+        getCurrentDate();
+    </script>
+</body>
+</html>
